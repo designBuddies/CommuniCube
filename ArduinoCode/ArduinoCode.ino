@@ -1,4 +1,3 @@
-
 //Knappe Lyttere
 int BUTTON1 = 3;
 int BUTTON2 = 4;
@@ -9,7 +8,6 @@ int LEDPIN = 13;
 bool answerGiven = false;
 
 String user = "unik_ID"; // Sett en unik ID for hver Arduino
-
 
 void setup(){
   //For å kunne sende data til Processing over USB
@@ -22,7 +20,6 @@ void setup(){
   pinMode(LEDPIN, OUTPUT);
   digitalWrite(LEDPIN, LOW);
 }
-
 /**
  * Loop som kjorer på Arduino
  */
