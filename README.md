@@ -4,10 +4,14 @@
 [Mer om prosjektet](http://www.uio.no/studier/emner/matnat/ifi/INF1510/v16/prosjekter/designbuddies/index.html)
 
 ## Innholdsfortegnelse
-* [CommuniCube](#CommuniCube)
-* [Introduction](#Introduction)
-* [Schematics](#Schematics)
-* [Credits](#Credits)
+* [CommuniCube](#communiCube)
+* [Introduction](#introduction)
+* [How To](#how_to)
+* [Schematics](#schematics)
+* [Credits](#credits)
+
+## How To
+
 
 ## Schematics
 soon.png
