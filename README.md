@@ -1,6 +1,7 @@
 <p align="center">
-![CommuniCube Logo](other/img/logo.png)
-Format: ![Alt Text](https://github.com/designBuddies/INF1510/blob/master/other/img/logo.png?raw=true)
+![CommuniCube Logo]
+(https://github.com/designBuddies/INF1510/blob/master/other/img/logo.png?raw=true)
+
 </p>
 
 
