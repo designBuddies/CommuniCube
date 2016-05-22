@@ -6,12 +6,11 @@
 ## Innholdsfortegnelse
 * [CommuniCube](#communiCube)
 * [Introduction](#introduction)
-* [How To](#how_to)
+* [How To](#how-to)
 * [Schematics](#schematics)
 * [Credits](#credits)
 
 ## How To
-
 
 ## Schematics
 soon.png
