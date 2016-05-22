@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center">
 <a name="logo"><img src=""></a>
 </p>
@@ -29,3 +30,7 @@
 Si litt om prosjekted
 
 ### Innholdfortegnelse
+=======
+# INF1510
+Arduino code for INF1510 project. 
+>>>>>>> master
