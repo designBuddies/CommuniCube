@@ -1,23 +1,16 @@
 <p align="center">
-<a name="logo"><img src="https://raw.githubusercontent.com/designBuddies/INF1510/master/other/img/logo.png"></a>
+![CommuniCube Logo](other/img/logo.png)
 </p>
 
+
 <p align="center">
-<b><a href="#overview">Overview</a></b>
-|
-<b><a href="#features">Features</a></b>
+<b><a href="#CommuniCube">Overview</a></b>
 |
 <b><a href="#introduksjon">Introduksjon</a></b>
 |
-<b><a href="#updating">Updating</a></b>
-|
-<b><a href="#setup">Setup</a></b>
-|
-<b><a href="#structure">Structure</a></b>
+<b><a href="#schematics">Schematics</a></b>
 |
 <b><a href="#credits">Credits</a></b>
-|
-<b><a href="#license">License</a></b>
 </p>
 
 <br>
@@ -28,6 +21,12 @@
 ### Introduksjon
 Si litt om prosjekted
 
-### Innholdfortegnelse
-=======
-# INF1510
+## Schematics
+
+## Credits
+Andreas Finn Hansen
+Andreas Nyborg Hansen
+Bendik Hess-Bolstad
+Julie Hagen Nilsen
+Ståle Hoberg
+Tonje Mjøvik
