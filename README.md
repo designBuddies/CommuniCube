@@ -1,7 +1,5 @@
 <p align="center">
-![CommuniCube Logo]
-(https://github.com/designBuddies/INF1510/blob/master/other/img/logo.png?raw=true)
-
+<a name="logo"><img src="https://raw.githubusercontent.com/designBuddies/INF1510/master/other/img/logo.png"></a>
 </p>
 
 
