@@ -58,4 +58,3 @@ void loop()
 void lysAv(){
   digitalWrite(LEDPIN, LOW);
   }
-
