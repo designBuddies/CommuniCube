@@ -1,7 +1,7 @@
-![CommuniCube Logo](https://raw.githubusercontent.com/designBuddies/INF1510/master/other/img/logo.png)
+![CommuniCube Logo](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/logo.png)
 # CommuniCube
 ## Introduction
-[Mer om prosjektet](http://www.uio.no/studier/emner/matnat/ifi/INF1510/v16/prosjekter/designbuddies/index.html)
+Mer om prosjektet finner du [**her**](http://www.uio.no/studier/emner/matnat/ifi/INF1510/v16/prosjekter/designbuddies/index.html)
 
 ## Innholdsfortegnelse
 * [CommuniCube](#communiCube)
@@ -13,7 +13,7 @@
 ## How To
 
 ## Schematics
-soon.png
+![Schematics](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/schematics.png)
 
 ## Credits
 Andreas Finn Hansen ([@andrefh](https://github.com/andrefh))  
