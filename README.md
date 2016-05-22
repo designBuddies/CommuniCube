@@ -1,5 +1,5 @@
 <p align="center">
-<a name="top" href="http://b4b4r07.com/dotfiles"><img src=""></a>
+<a name="logo"><img src=""></a>
 </p>
 
 <p align="center">
