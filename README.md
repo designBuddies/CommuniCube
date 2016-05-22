@@ -1,5 +1,5 @@
 <p align="center">
-<a name="logo"><img src=""></a>
+<a name="logo"><img src="https://raw.githubusercontent.com/designBuddies/INF1510/master/other/img/logo.png"></a>
 </p>
 
 <p align="center">
