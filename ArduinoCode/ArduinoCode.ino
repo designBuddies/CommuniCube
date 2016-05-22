@@ -26,9 +26,8 @@ void loop()
 {
   // Koden kjorer kun om svar ikke er gitt.
   if(!answerGiven){
-    //LED lyser for aa vise at svar ikke er avgitt
     digitalWrite(LEDPIN, HIGH);
-    //En "if" blir trigget om en knapp blir trykket
+
     if(digitalRead(BUTTON1) == HIGH){
       sendValg(1);
     }
@@ -43,18 +42,12 @@ void loop()
     }
   }
 }
-/**
- * Metode som sender hvilken knapp som har blitt
- *
- *
- */
 void sendValg(int valg){
   Serial.println(user + "," + valg);
   delay(200);
   answerGiven = true;
   lysAv();
 }
-//Metode som skrir av LED
 void lysAv(){
   digitalWrite(LEDPIN, LOW);
 }
