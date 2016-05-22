@@ -13,9 +13,9 @@ Si litt om prosjekted
 soon.png
 
 ### Credits
-Andreas Finn Hansen (@andrefh)
-Andreas Nyborg Hansen (@AndreasNH)
-Bendik Hess-Bolstad (@???)
-Julie Hagen Nilsen (@???)
-Ståle Hoberg (@staaleho)
-Tonje Mjøvik (@???)
+Andreas Finn Hansen (@andrefh)  
+Andreas Nyborg Hansen (@AndreasNH)  
+Bendik Hess-Bolstad (@???)  
+Julie Hagen Nilsen (@???)  
+Ståle Hoberg (@staaleho)  
+Tonje Mjøvik (@???)  
