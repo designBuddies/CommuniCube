@@ -29,11 +29,12 @@ Mer om prosjektet finner du [**her**](http://www.uio.no/studier/emner/matnat/ifi
 * Maling i 4 farger
 
 ### Schematics
-## Base
 ![Schematics](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/schematics.png)
 ## Filer for laserkutter
+#### Base
 ![Lazercut Base](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/caseplan_base.png)
-![Lazercut Kloss](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/caseplans_boks.png)
+#### Boks
+![Lazercut Boks](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/caseplans_boks.png)
 
 ## Credits
 Andreas Finn Hansen ([@andrefh](https://github.com/andrefh))  
