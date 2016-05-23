@@ -19,17 +19,11 @@ PrintWriter input;
 String line;
 BufferedReader reader;
 
-
-void setup(){
-
-<<<<<<< HEAD
-=======
 void setup()
 {
   //navn på output fil
   output = createWriter("data.txt");
   selectInput("Select a file to process:", "fileSelected");
->>>>>>> master
   // Setter storrelse på vindduet til applikasjon
   size(900,700);
   //Tekst formatering
@@ -45,16 +39,10 @@ void setup()
   PortTwo.bufferUntil('\n');
   PortThree.bufferUntil('\n');
   PortFour.bufferUntil('\n');
-
-<<<<<<< HEAD
-
   //navn på output fil
   output = createWriter("data.txt");
   selectInput("Select a file to process:", "fileSelected");
 
-=======
-  
->>>>>>> master
 }
 
 /**
@@ -180,7 +168,6 @@ void angiSvar(Serial port){
     antSvar4++;
   }
 }
-<<<<<<< HEAD
 /**
  * Andreas Kommenter denne metoden
  * @param xxx
@@ -189,7 +176,7 @@ void keyPressed() {
   output.flush();
   output.close();
   exit();
-=======
+}
 
 void fileSelected(File selection) {
   if (selection == null) {
@@ -205,8 +192,7 @@ void fileSelected(File selection) {
     if(line == null){
       noLoop();
     }else{
-      output.println(line);  
-    } 
+      output.println(line);
+    }
   }
->>>>>>> master
 }
