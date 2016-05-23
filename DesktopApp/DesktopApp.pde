@@ -1,27 +1,36 @@
 import processing.serial.*;
 
+//Oppsett av porter som CommuniCubene skal bruke.
 Serial PortOne, PortTwo, PortThree, PortFour, PortFive, PortSix;
+//Oppsett av writer;
 PrintWriter output;
+//Variabler for a holde diverse verdier
 String value;
 String bruker;
 int svar;
 
+//Oppsett av dimensjoner for soylediagram.
 int distX = 100;
 int distY = 550;
 
+//Holdeverdier for svar.
 int antSvar1 = 0;
 int antSvar2 = 0;
 int antSvar3 = 0;
 int antSvar4 = 0;
+
+//Oppsett av verdier til draw().
 PFont font;
 PFont heading;
+
+//Variabler for lagring av data.
 PrintWriter input;
 String line;
 BufferedReader reader;
 
 void setup()
 {
-  //navn på output fil
+  //Navn på output fil
   output = createWriter("data.txt");
   selectInput("Select a file to process:", "fileSelected");
   // Setter storrelse på vindduet til applikasjon
@@ -40,7 +49,6 @@ void setup()
   PortThree.bufferUntil('\n');
   PortFour.bufferUntil('\n');
   //navn på output fil
-  output = createWriter("data.txt");
   selectInput("Select a file to process:", "fileSelected");
 
 }
@@ -127,7 +135,6 @@ void fileSelected(File selection) {
        noLoop();
      }else{
        output = createWriter(line + ".txt");
-
      }
 
      try{
