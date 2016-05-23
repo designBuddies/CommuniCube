@@ -50,6 +50,6 @@ void loop(){
 void sendValg(int valg){
   Serial.println(user + "," + valg);
   delay(200);
-  answerGiven = true;
-  digitalWrite(LEDPIN, LOW);
+  answerGiven = true; //Viser at et valgt er tatt, for aa hindre lesing igjen
+  digitalWrite(LEDPIN, LOW); //Skrur av LED for aa vise at noe er valgt
 }
