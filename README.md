@@ -33,7 +33,7 @@ Mer om prosjektet finner du [**her**](http://www.uio.no/studier/emner/matnat/ifi
 ![Schematics](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/schematics.png)
 ## Filer for laserkutter
 ![Lazercut Base](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/caseplan_base.png)
-![Lazercut Kloss](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/ caseplans_boks.png)
+![Lazercut Kloss](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/caseplans_boks.png)
 
 ## Credits
 Andreas Finn Hansen ([@andrefh](https://github.com/andrefh))  
