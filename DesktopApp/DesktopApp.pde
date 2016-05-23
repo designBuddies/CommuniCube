@@ -1,11 +1,13 @@
 import processing.serial.*;
 
+//Initialiserer variabler
 Serial PortOne, PortTwo, PortThree, PortFour, PortFive, PortSix;
 PrintWriter output;
 String value;
 String bruker;
 int svar;
 
+//Setter dimensjoner for soylediagram
 int distX = 100;
 int distY = 550;
 
@@ -13,43 +15,45 @@ int antSvar1 = 0;
 int antSvar2 = 0;
 int antSvar3 = 0;
 int antSvar4 = 0;
+
+//Oppsett av variabler for soylediagram
 PFont font;
 PFont heading;
+
+//variabler for aa lese fra og skrive til fil
 PrintWriter input;
 String line;
 BufferedReader reader;
 
 void setup()
 {
-  //navn på output fil
-  output = createWriter("data.txt");
+  //Leser inn fra sporsmolsfil, og oppretter utdatafil
   selectInput("Select a file to process:", "fileSelected");
-  // Setter storrelse på vindduet til applikasjon
+  // Setter storrelse på vinduet til applikasjon
   size(900,700);
-  //Tekst formatering
+  //Tekstformatering
   font = createFont("Arial",16,true);
   heading = createFont("Lobster", 32, true);
-  //initialiserer USB porter
+  //initialiserer USB-porter
   PortOne = new Serial(this, Serial.list()[0], 9600); // "COM5"
   PortTwo = new Serial(this, Serial.list()[1],9600); // "COM6"
   PortThree = new Serial(this, Serial.list()[2], 9600); // "COM7"
   PortFour = new Serial(this, Serial.list()[3],9600); // "COM9"
 
+  //Leser fil frem til lineskift
   PortOne.bufferUntil('\n');
   PortTwo.bufferUntil('\n');
   PortThree.bufferUntil('\n');
   PortFour.bufferUntil('\n');
-  //navn på output fil
-  output = createWriter("data.txt");
-  selectInput("Select a file to process:", "fileSelected");
+
 
 }
 
 /**
- * Andreas Kommenter denne metoden
+ * Setter opp applikasjonsvindu
  */
-void draw()
-{
+void draw(){
+  //applikasjonsvindu
    background(255,255,255,255);
    stroke(0, 0, 0, 255);
    fill(245,245,245);
@@ -65,28 +69,30 @@ void draw()
    rect (300+distX, distY, 100, - antSvar3*100);
    fill(255,255,0);
    rect (400+distX, distY, 100, - antSvar4*100);
-    textFont(font,16);
-    fill(0);
-    text("Svar 1",120+distX, distY+20);
-    text("Svar 2",220+distX, distY+20);
-    text("Svar 3",320+distX, distY+20);
-    text("Svar 4",420+distX, distY+20);
-    //mål Y-akse
-    text("1",distX+80, 520);
-    text("2",distX+80, 420);
-    text("3",distX+80, 320);
-    text("4",distX+80, 220);
-    textFont(heading,32);
-    fill(0);
-    text("CommuniCube", 300,100);
-     if (value != null) {
-       output.println(value);
-       value = null;
-     }
+   textFont(font,16);
+   fill(0);
+   //Tekst X-akse
+   text("Svar 1",120+distX, distY+20);
+   text("Svar 2",220+distX, distY+20);
+   text("Svar 3",320+distX, distY+20);
+   text("Svar 4",420+distX, distY+20);
+   //tekst Y-akse
+   text("1",distX+80, 520);
+   text("2",distX+80, 420);
+   text("3",distX+80, 320);
+   text("4",distX+80, 220);
+   //heading
+   textFont(heading,32);
+   fill(0);
+   text("CommuniCube", 300,100);
+   if (value != null) {
+     output.println(value);
+     value = null;
+    }
 }
 
 /**
- * Andreas Kommenter denne metoden
+ * Metode som kalles naar bruker avgir et svar
  * @param USB port som det skal leses fra
  */
 void serialEvent(Serial thisPort) {
@@ -109,14 +115,13 @@ void serialEvent(Serial thisPort) {
   }
 }
 /**
- * Andreas Kommenter denne metoden
+ * Leser inn fil basert paa brukervalg, og oppretter utfil.
  * @param Fil som det skal skrives til
  */
 void fileSelected(File selection) {
    if (selection == null) {
      println("Window was closed or the user hit cancel.");
    } else {
-     println("User selected " + selection.getAbsolutePath());
      reader = createReader(selection.getAbsolutePath());
      try{
        line = reader.readLine();
@@ -127,7 +132,6 @@ void fileSelected(File selection) {
        noLoop();
      }else{
        output = createWriter(line + ".txt");
-
      }
 
      try{
@@ -144,8 +148,8 @@ void fileSelected(File selection) {
    }
 }
 /**
- * Andreas Kommenter denne metoden
- * @param xxx
+ * Metoden kalles nar serial mottar data. Svar printes.
+ * @param serial som lytter etter data
  */
 void angiSvar(Serial port){
   value = port.readStringUntil('\n');
@@ -169,30 +173,10 @@ void angiSvar(Serial port){
   }
 }
 /**
- * Andreas Kommenter denne metoden
- * @param xxx
+ * Skrivet til fil og avslutter programmet
  */
 void keyPressed() {
   output.flush();
   output.close();
   exit();
-}
-
-void fileSelected(File selection) {
-  if (selection == null) {
-    println("Window was closed or the user hit cancel.");
-  } else {
-    println("User selected " + selection.getAbsolutePath());
-    reader = createReader(selection.getAbsolutePath());
-    try{
-      line = reader.readLine();
-    }catch(IOException io){
-        line = null;
-    }
-    if(line == null){
-      noLoop();
-    }else{
-      output.println(line);
-    }
-  }
 }
