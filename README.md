@@ -34,7 +34,7 @@ Mer om prosjektet finner du [**her**](http://www.uio.no/studier/emner/matnat/ifi
 * 2 Breadboards
 * 1 USB Kabel
 * 1 110mm * 170mm boks
-* 1 72mm * 72mm kvadrat
+* 1 70mm * 70mm kvadrat
 * 4 30mm * 20mm treangler i formingsskum
 * Diverse ledninger
 
