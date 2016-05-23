@@ -2,7 +2,9 @@ import processing.serial.*;
 
 //Initialiserer variabler
 Serial PortOne, PortTwo, PortThree, PortFour, PortFive, PortSix;
+//Oppsett av writer;
 PrintWriter output;
+//Variabler for a holde diverse verdier
 String value;
 String bruker;
 int svar;
@@ -11,6 +13,7 @@ int svar;
 int distX = 100;
 int distY = 550;
 
+//Holdeverdier for svar.
 int antSvar1 = 0;
 int antSvar2 = 0;
 int antSvar3 = 0;
@@ -20,7 +23,7 @@ int antSvar4 = 0;
 PFont font;
 PFont heading;
 
-//variabler for aa lese fra og skrive til fil
+//Variabler for lagring av data.
 PrintWriter input;
 String line;
 BufferedReader reader;
@@ -45,8 +48,6 @@ void setup()
   PortTwo.bufferUntil('\n');
   PortThree.bufferUntil('\n');
   PortFour.bufferUntil('\n');
-
-
 }
 
 /**
