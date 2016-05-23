@@ -1,4 +1,4 @@
-//Knappe Lyttere
+//Verdier til knappelyttere
 int BUTTON1 = 3;
 int BUTTON2 = 4;
 int BUTTON3 = 6;
@@ -26,8 +26,9 @@ void setup(){
 void loop(){
   // Koden kjorer kun om svar ikke er gitt.
   if(!answerGiven){
-    //LED lyser kfor å indikere at svar ikke er avgitt
+    //LED lyser for aa indikere at svar ikke er avgitt
     digitalWrite(LEDPIN, HIGH);
+    //Leser hvilken krets som er sluttet, og sender det til Processing
     if(digitalRead(BUTTON1) == HIGH){
       sendValg(1);
     }
