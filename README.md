@@ -50,6 +50,9 @@ Mer om prosjektet finner du [**her**](http://www.uio.no/studier/emner/matnat/ifi
 #### Boks
 ![Lazercut Boks](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/caseplans_boks.png)
 
+## Video
+*Kommer snart*
+
 ## Credits
 Andreas Finn Hansen ([@andrefh](https://github.com/andrefh))  
 Andreas Nyborg Hansen ( [@AndreasNH](https://github.com/AndreasNH))  
