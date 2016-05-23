@@ -46,9 +46,9 @@ Mer om prosjektet finner du [**her**](http://www.uio.no/studier/emner/matnat/ifi
 ![Schematics](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/schematics.png)
 ### Filer for laserkutter
 #### Base
-![Lazercut Base](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/caseplan_base.png)
+![Lazercut Base v2](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/caseplan_base.png)
 #### Boks
-![Lazercut Boks](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/caseplans_boks.png)
+![Lazercut Boks v2](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/caseplans_boks.png)
 
 ## Video
 *Kommer snart*
