@@ -18,6 +18,9 @@ PFont heading;
 
 void setup()
 {
+  //navn på output fil
+  output = createWriter("data.txt");
+  selectInput("Select a file to process:", "fileSelected");
   // Setter storrelse på vindduet til applikasjon
   size(900,700);
 
@@ -36,8 +39,7 @@ void setup()
   PortThree.bufferUntil('\n');
   PortFour.bufferUntil('\n');
 
-  //navn på output fil
-  output = createWriter("data.txt");
+  
 }
 
 void draw()
@@ -134,5 +136,24 @@ void angiSvar(Serial port){
   }
   if(svar == 4) {
     antSvar4++;
+  }
+}
+
+void fileSelected(File selection) {
+  if (selection == null) {
+    println("Window was closed or the user hit cancel.");
+  } else {
+    println("User selected " + selection.getAbsolutePath());
+    reader = createReader(selection.getAbsolutePath());
+    try{
+      line = reader.readLine();
+    }catch(IOException io){
+        line = null;
+    }
+    if(line == null){
+      noLoop();
+    }else{
+      output.println(line);  
+    } 
   }
 }
