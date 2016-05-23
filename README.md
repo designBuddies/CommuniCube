@@ -24,8 +24,6 @@ Mer om prosjektet finner du [**her**](http://www.uio.no/studier/emner/matnat/ifi
 9. Bruker trykker tast for å avslutte DesktopApp.
 10. DesktopApp skriver resultatene til fil.
 
-
-
 ## Hardware
 #### Deler pr. Base
 * 1 Arduino UNO
@@ -36,11 +34,13 @@ Mer om prosjektet finner du [**her**](http://www.uio.no/studier/emner/matnat/ifi
 * 1 110mm * 170mm boks
 * 1 70mm * 70mm kvadrat
 * 4 30mm * 20mm treangler i formingsskum
+* Aluminiumsfolie for kontaktflater
 * Diverse ledninger
 
 #### Deler pr. Kloss
 * 1 70mm * 70mm boks
 * Maling i 4 farger
+* Aluminiumsfolie kontaktflate
 
 ### Schematics
 ![Schematics](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/schematics.png)
