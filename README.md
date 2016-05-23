@@ -1,5 +1,6 @@
 ![CommuniCube Logo](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/logo.png)
 ## Introduction
+CommuniCube-systemet består av to komponenter: et gitt antall CommuniCubes(prototypen har fire) og en laptop som kjører et program(DesktopApp) i Processing IDE, et utviklingsmiljø basert på blant annet Java, og som er designet for visuell representasjon av data.
 Mer om prosjektet finner du [**her**](http://www.uio.no/studier/emner/matnat/ifi/INF1510/v16/prosjekter/designbuddies/index.html)
 
 ## Innholdsfortegnelse
@@ -10,7 +11,20 @@ Mer om prosjektet finner du [**her**](http://www.uio.no/studier/emner/matnat/ifi
 * [Schematics](#schematics)
 * [Credits](#credits)
 
-## How To
+## Funksjonalitet
+##### Hver kjøring av programmet utføres i denne rekkefølgen:
+1. Bruker starter programmet.
+2. Bruker velger en spørsmålsfil.
+3. DesktoppApp oppretter en svarfil basert på informasjon i spørsmålsfil.
+4. DesktopApp sender signal til alle tilkoblede CC om at de skal starte innsamling av data.
+5. Respondent svarer.
+6. Communicube sender svaret til DesktopApp via serialport.
+7. Communicube setter seg seg i ferdigmodus.
+8. DesktopApp skriver resultat til skjerm.
+9. Bruker trykker tast for å avslutte DesktopApp.
+10. DesktopApp skriver resultatene til fil.
+
+
 
 ## Hardware
 #### Deler pr. Base
