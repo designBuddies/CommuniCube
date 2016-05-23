@@ -1,13 +1,12 @@
 ![CommuniCube Logo](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/logo.png)
-## Introduction
+## Introduksjon
 CommuniCube-systemet består av to komponenter: et gitt antall CommuniCubes, og en laptop som kjører et program(DesktopApp) i Processing IDE, et utviklingsmiljø basert på blant annet Java, og som er designet for visuell representasjon av data.
 
 Mer om prosjektet finner du [**her**](http://www.uio.no/studier/emner/matnat/ifi/INF1510/v16/prosjekter/designbuddies/index.html)
 
 ## Innholdsfortegnelse
-* [CommuniCube](#communiCube)
-* [Introduction](#introduction)
-* [How To](#how-to)
+* [Introduksjon](#introduksjon)
+* [Funksjonalitet](#funksjonalitet)
 * [Hardware](#hardware)
 * [Schematics](#schematics)
 * [Credits](#credits)
