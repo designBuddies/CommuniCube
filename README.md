@@ -30,7 +30,7 @@ Mer om prosjektet finner du [**her**](http://www.uio.no/studier/emner/matnat/ifi
 
 ### Schematics
 ![Schematics](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/schematics.png)
-## Filer for laserkutter
+### Filer for laserkutter
 #### Base
 ![Lazercut Base](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/caseplan_base.png)
 #### Boks
