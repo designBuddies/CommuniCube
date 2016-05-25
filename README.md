@@ -1,4 +1,6 @@
 ![CommuniCube Logo](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/logo.png)
+
+
 ## Introduksjon
 CommuniCube-systemet består av to komponenter: et gitt antall CommuniCubes, og en laptop som kjører et program(DesktopApp) i Processing IDE, et utviklingsmiljø basert på blant annet Java, og som er designet for visuell representasjon av data.
 
@@ -29,6 +31,8 @@ Mer om prosjektet finner du [**her**](http://www.uio.no/studier/emner/matnat/ifi
 9. Bruker trykker tast for å avslutte DesktopApp.
 10. DesktopApp skriver resultatene til fil.
 
+<<<<<<< HEAD
+=======
 ##### Arduino
 [**_Kode_**](https://github.com/designBuddies/CommuniCube/blob/master/ArduinoCode/ArduinoCode.ino)  
 Så lenge Arduino er i svar-modus, lytter den etter om en av de fire kretsene lukkes. Om en av kretsene lukkes sender Arduino svaret over serial(emulert i en USB-kabel) til DesktopApp, og går til svart-modus. Dette vil si at LED lampen slutter å lyse og at Aduinoen ikke leser eller sender flere svar fra den aktuelle basen.
@@ -39,6 +43,7 @@ Alle Baser (Arduinoer) er koblet til en PC som kjører DestopApp. DesktopApp tar
 
 
 
+>>>>>>> origin/andreas
 ## Hardware
 ### Deler
 ##### Deler pr. Base
@@ -50,11 +55,13 @@ Alle Baser (Arduinoer) er koblet til en PC som kjører DestopApp. DesktopApp tar
 * 1 110mm * 170mm boks
 * 1 70mm * 70mm kvadrat
 * 4 30mm * 20mm treangler i formingsskum
+* Aluminiumsfolie for kontaktflater
 * Diverse ledninger
 
 ##### Deler pr. Kloss
 * 1 70mm * 70mm boks
 * Maling i 4 farger
+* Aluminiumsfolie kontaktflate
 
 ### Schematics
 ![Schematics](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/schematics.png)
