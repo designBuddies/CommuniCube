@@ -29,6 +29,7 @@ Mer om prosjektet finner du [**her**](http://www.uio.no/studier/emner/matnat/ifi
 9. Bruker trykker tast for å avslutte DesktopApp.
 10. DesktopApp skriver resultatene til fil.
 
+
 ##### Arduino
 [**_Kode_**](https://github.com/designBuddies/CommuniCube/blob/master/ArduinoCode/ArduinoCode.ino)  
 Så lenge Arduino er i svar-modus, lytter den etter om en av de fire kretsene lukkes. Om en av kretsene lukkes sender Arduino svaret over serial(emulert i en USB-kabel) til DesktopApp, og går til svart-modus. Dette vil si at LED lampen slutter å lyse og at Aduinoen ikke leser eller sender flere svar fra den aktuelle basen.
@@ -59,13 +60,6 @@ Alle Baser (Arduinoer) er koblet til en PC som kjører DestopApp. DesktopApp tar
 ### Schematics
 ![Schematics](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/schematics.png)
 
-
-
-### Filer for laserkutter
-#### Base
-![Lazercut Base v2](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/caseplan_base.png)
-#### Boks
-![Lazercut Boks v2](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/caseplans_boks.png)
 
 ## Video
 *Kommer snart*
