@@ -4,6 +4,7 @@
  *
  * Programmet er kun testet paa en Acer sonic master x550J med Windows 10.
  */
+ 
 import processing.serial.*;
 
 //Initialiserer variabler
