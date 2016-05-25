@@ -1,8 +1,8 @@
 /**
- * Dette programmet vil kun kjore om det er koblet til 4 baser til serial
- * portene som koden spessefiserer. (COM5, COM6, COM7, COM9)
- * 
- * Programmet er kun testet paa *PCen til Finn* med Windows 10.
+ * Dette programmet vil kun kjore om det er koblet til 4 baser til
+ * serialportene som koden spessefiserer. (COM5, COM6, COM7, COM9)
+ *
+ * Programmet er kun testet paa en Acer sonic master x550J med Windows 10.
  */
 import processing.serial.*;
 
