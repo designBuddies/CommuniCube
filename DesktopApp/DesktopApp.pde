@@ -1,3 +1,9 @@
+/**
+ * Dette programmet vil kun kjore om det er koblet til 4 baser til
+ * serialportene som koden spessefiserer. (COM5, COM6, COM7, COM9)
+ *
+ * Programmet er kun testet paa en Acer sonic master x550J med Windows 10.
+ */
 import processing.serial.*;
 
 //Initialiserer variabler
@@ -32,7 +38,7 @@ void setup()
 {
   //Leser inn fra sporsmolsfil, og oppretter utdatafil
   selectInput("Select a file to process:", "fileSelected");
-  // Setter storrelse på vinduet til applikasjon
+  // Setter storrelse paa vinduet til applikasjon
   size(900,700);
   //Tekstformatering
   font = createFont("Arial",16,true);
