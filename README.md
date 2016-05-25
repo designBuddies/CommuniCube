@@ -7,12 +7,12 @@ Mer om prosjektet finner du [**her**](http://www.uio.no/studier/emner/matnat/ifi
 ## Innholdsfortegnelse
 * [Introduksjon](#introduksjon)
 * [Funksjonalitet](#funksjonalitet)
-..* [Kjørerekkefølge](#hver-kjøring-av-programmet-utføres-i-denne-rekkefølgen)
-..* [Arduino](#arduino)
-..* [DesktopApp](#desktopapp)
+  * [Kjørerekkefølge](#hver-kjøring-av-programmet-utføres-i-denne-rekkefølgen)
+  * [Arduino](#arduino)
+  * [DesktopApp](#desktopapp)
 * [Hardware](#hardware)
-..* [Deler](#deler)
-..* [Schematics](#schematics)
+  * [Deler](#deler)
+  * [Schematics](#schematics)
 * [Video](#video)
 * [Credits](#credits)
 
