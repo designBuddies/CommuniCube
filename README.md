@@ -1,6 +1,4 @@
 ![CommuniCube Logo](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/logo.png)
-
-
 ## Introduksjon
 CommuniCube-systemet består av to komponenter: et gitt antall CommuniCubes, og en laptop som kjører et program(DesktopApp) i Processing IDE, et utviklingsmiljø basert på blant annet Java, og som er designet for visuell representasjon av data.
 
@@ -41,6 +39,7 @@ Så lenge Arduino er i svar-modus, lytter den etter om en av de fire kretsene lu
 Alle Baser (Arduinoer) er koblet til en PC som kjører DestopApp. DesktopApp tar i mot data over serial USB) og legger de inn i en array. Deretter brukes denne til å lage en grafisk fremstilling av dataene. Når programmet avsluttes skrives spørsmålet, de unike IDene til basene og hva de har svart til fil.
 
 
+
 ## Hardware
 ### Deler
 ##### Deler pr. Base
@@ -52,13 +51,11 @@ Alle Baser (Arduinoer) er koblet til en PC som kjører DestopApp. DesktopApp tar
 * 1 110mm * 170mm boks
 * 1 70mm * 70mm kvadrat
 * 4 30mm * 20mm treangler i formingsskum
-* Aluminiumsfolie for kontaktflater
 * Diverse ledninger
 
 ##### Deler pr. Kloss
 * 1 70mm * 70mm boks
 * Maling i 4 farger
-* Aluminiumsfolie kontaktflate
 
 ### Schematics
 ![Schematics](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/schematics.png)
