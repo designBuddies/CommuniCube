@@ -58,7 +58,7 @@ void setup()
 }
 
 /**
- * Setter opp applikasjonsvindu
+ * Setter opp applikasjonsvindu og tegner grafer. Denne metoden er en loop
  */
 void draw(){
   //applikasjonsvindu
@@ -69,6 +69,7 @@ void draw(){
    line(distX+100, 552, distX+100, 150);
    line(distX+100, 552, distX+500, 552);
    stroke(0,0,0);
+   //Tegner grafer
    fill(0,46,235);
    rect (100+distX, distY, 100, - antSvar1*100);
    fill(60,248,0);
@@ -77,6 +78,7 @@ void draw(){
    rect (300+distX, distY, 100, - antSvar3*100);
    fill(255,255,0);
    rect (400+distX, distY, 100, - antSvar4*100);
+   //Tekst formatering
    textFont(font,16);
    fill(0);
    //Tekst X-akse
