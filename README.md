@@ -7,8 +7,13 @@ Mer om prosjektet finner du [**her**](http://www.uio.no/studier/emner/matnat/ifi
 ## Innholdsfortegnelse
 * [Introduksjon](#introduksjon)
 * [Funksjonalitet](#funksjonalitet)
+..* [Kjørerekkefølge](#hver-kjøring-av-programmet-utføres-i-denne-rekkefølgen)
+..* [Arduino](#arduino)
+..* [DesktopApp](#desktopapp)
 * [Hardware](#hardware)
-* [Schematics](#schematics)
+..* [Deler](#deler)
+..* [Schematics](#schematics)
+* [Video](#video)
 * [Credits](#credits)
 
 ## Funksjonalitet
@@ -24,10 +29,19 @@ Mer om prosjektet finner du [**her**](http://www.uio.no/studier/emner/matnat/ifi
 9. Bruker trykker tast for å avslutte DesktopApp.
 10. DesktopApp skriver resultatene til fil.
 
+##### Arduino
+[**_Kode_**](https://github.com/designBuddies/CommuniCube/blob/master/ArduinoCode/ArduinoCode.ino)  
+Så lenge Arduino er i svar-modus, lytter den etter om en av de fire kretsene lukkes. Om en av kretsene lukkes sender Arduino svaret over serial(emulert i en USB-kabel) til DesktopApp, og går til svart-modus. Dette vil si at LED lampen slutter å lyse og at Aduinoen ikke leser eller sender flere svar fra den aktuelle basen.
+
+##### DesktopApp
+[**_Kode_**](https://github.com/designBuddies/CommuniCube/blob/master/DesktopApp/DesktopApp.pde)  
+Alle Baser (Arduinoer) er koblet til en PC som kjører DestopApp. DesktopApp tar i mot data over serial USB) og legger de inn i en array. Deretter brukes denne til å lage en grafisk fremstilling av dataene. Når programmet avsluttes skrives spørsmålet, de unike IDene til basene og hva de har svart til fil.
+
 
 
 ## Hardware
-#### Deler pr. Base
+### Deler
+##### Deler pr. Base
 * 1 Arduino UNO
 * 5 220Ω Resistorer
 * 1 Grønn LED
@@ -38,12 +52,15 @@ Mer om prosjektet finner du [**her**](http://www.uio.no/studier/emner/matnat/ifi
 * 4 30mm * 20mm treangler i formingsskum
 * Diverse ledninger
 
-#### Deler pr. Kloss
+##### Deler pr. Kloss
 * 1 70mm * 70mm boks
 * Maling i 4 farger
 
 ### Schematics
 ![Schematics](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/schematics.png)
+
+
+
 ### Filer for laserkutter
 #### Base
 ![Lazercut Base v2](https://raw.githubusercontent.com/designBuddies/CommuniCube/master/other/img/caseplan_base.png)
