@@ -48,13 +48,13 @@ Alle Baser (Arduinoer) er koblet til en PC som kjører DestopApp. DesktopApp tar
 * 1 Grønn LED
 * 2 Breadboards
 * 1 USB Kabel
-* 1 110mm * 170mm boks
-* 1 70mm * 70mm kvadrat
-* 4 30mm * 20mm treangler i formingsskum
+* 1 *110mm* * *170mm* * *50mm* Base
+* 1 *70mm* * *70mm* * *5mm* Kvadrat (Bruk restmatriell fra toplokket av basen)
+* 4 *30mm* * *20mm* * *5mm* treangler i formingsskum
 * Diverse ledninger
 
-##### Deler pr. Kloss
-* 1 70mm * 70mm boks
+##### Deler pr. Kube
+* 1 *70mm* * *70mm* * *70mm* Kube
 * Maling i 4 farger
 
 ### Schematics
