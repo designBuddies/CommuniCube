@@ -38,11 +38,12 @@ String line;
 BufferedReader reader;
 
 /**
- * 
- *
+ * Denne metoden initialiserer varieabler
+ * og oppretter ut fil.
  */
 void setup()
 {
+  // Setter storrelse på vindduet til applikasjon
   size(900,700);
   font = createFont("Arial",16,true);
   heading = createFont("Lobster", 32, true);
@@ -56,54 +57,57 @@ void setup()
   PortThree.bufferUntil('\n');
   PortFour.bufferUntil('\n');
 
-
-
-   //navn på output fil
- output = createWriter("data.txt");
-   selectInput("Select a file to process:", "fileSelected");
-    // Setter storrelse på vindduet til applikasjon
-    size(900,700);
-
+  //henter spørsmaalsfil valgt av bruker.
+  selectInput("Select a file to process:", "fileSelected");
 }
 
+/**
+ * Metoden er en loop som tegner det grafiske grensesnittet.
+ */
 void draw()
 {
-   background(255,255,255,255);
-   stroke(0, 0, 0, 255);
-   fill(245,245,245);
-   rect(130, 120, 560, 460, 10);
-   line(distX+100, 552, distX+100, 150);
-   line(distX+100, 552, distX+500, 552);
-   stroke(0,0,0);
-   fill(0,46,235);
-   rect (100+distX, distY, 100, - antSvar1*100);
-   fill(60,248,0);
-   rect (200+distX, distY, 100, - antSvar2*100);
-   fill(240,30,0);
-   rect (300+distX, distY, 100, - antSvar3*100);
-   fill(255,255,0);
-   rect (400+distX, distY, 100, - antSvar4*100);
-    textFont(font,16);
-    fill(0);
-    text(svargul,120+distX, distY+20);
-    text(svarblaa,220+distX, distY+20);
-    text(svargronn,320+distX, distY+20);
-    text(svarrod,420+distX, distY+20);
-    //mål Y-akse
-    text("1",distX+80, 520);
-    text("2",distX+80, 420);
-    text("3",distX+80, 320);
-    text("4",distX+80, 220);
-    textFont(heading,32);
-    fill(0);
-    text("CommuniCube", 300,100);
-     if (value != null) {
-       output.println(value);
-       value = null;
-     }
+  background(255,255,255,255);
+  stroke(0, 0, 0, 255);
+  fill(245,245,245);
+  rect(130, 120, 560, 460, 10);
+  line(distX+100, 552, distX+100, 150);
+  line(distX+100, 552, distX+500, 552);
+  stroke(0,0,0);
+  fill(0,46,235);
+  //Tegner soylediagram
+  rect (100+distX, distY, 100, - antSvar1*100);
+  fill(60,248,0);
+  rect (200+distX, distY, 100, - antSvar2*100);
+  fill(240,30,0);
+  rect (300+distX, distY, 100, - antSvar3*100);
+  fill(255,255,0);
+  rect (400+distX, distY, 100, - antSvar4*100);
+  //Text x-akse
+  textFont(font,16);
+  fill(0);
+  text(svargul,120+distX, distY+20);
+  text(svarblaa,220+distX, distY+20);
+  text(svargronn,320+distX, distY+20);
+  text(svarrod,420+distX, distY+20);
+  //Text y akse
+  text("1",distX+80, 520);
+  text("2",distX+80, 420);
+  text("3",distX+80, 320);
+  text("4",distX+80, 220);
+  textFont(heading,32);
+  fill(0);
+  //Heading
+  text("CommuniCube", 300,100);
+    if (value != null) {
+      output.println(value);
+      value = null;
+    }
 }
 
-
+/**
+ * Metoden tar inn og tolker data fra Arduino.
+ * @param Serialporten som Arduinoen som avgir svar er koblet i
+ */
 void serialEvent(Serial thisPort) {
   try {
     if (thisPort == PortOne) {
@@ -124,6 +128,9 @@ void serialEvent(Serial thisPort) {
   }
 }
 
+/**
+ * Metode som gjor Arduino data om til data som prosessing kan bruke
+ */
 void angiSvar(Serial port){
   value = port.readStringUntil('\n');
   String[] arr = value.split(",");
@@ -145,7 +152,10 @@ void angiSvar(Serial port){
     antSvar4++;
   }
 }
-
+/**
+ * Metode for aa lese inn fil til prosessing og opprette output fil
+ * @param fil som bruker velger i "selectInput"
+ */
 void fileSelected(File selection) {
   if (selection == null) {
     println("Window was closed or the user hit cancel.");
@@ -176,7 +186,9 @@ void fileSelected(File selection) {
 
   }
 }
-
+/**
+ * Metode som skriver til fil og lukker programmet
+ */
 void keyPressed() {
   output.flush(); //<>//
   output.close();
