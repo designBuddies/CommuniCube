@@ -1,6 +1,6 @@
 /**
  * Dette programmet vil kun kjore om det er koblet til 4 baser som kjører ArduinoCode til
- * serialportene som koden spessefiserer. (COM5, COM6, COM7, COM9)
+ * serialportene som koden spesifiserer. (COM5, COM6, COM7, COM9)
  *
  * Programmet er kun testet paa en Acer sonic master x550J med Windows 10.
  */
@@ -43,7 +43,7 @@ BufferedReader reader;
  */
 void setup()
 {
-  // Setter storrelse på vindduet til applikasjon
+  // Setter storrelse på vinduet til applikasjonen
   size(900,700);
   font = createFont("Arial",16,true);
   heading = createFont("Lobster", 32, true);
@@ -85,6 +85,7 @@ void draw()
   //Text x-akse
   textFont(font,16);
   fill(0);
+  //Tegner inn svaralternativene fra filen
   text(svargul,120+distX, distY+20);
   text(svarblaa,220+distX, distY+20);
   text(svargronn,320+distX, distY+20);
