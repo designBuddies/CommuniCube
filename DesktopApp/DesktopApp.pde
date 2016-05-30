@@ -37,7 +37,10 @@ PrintWriter input;
 String line;
 BufferedReader reader;
 
-
+/**
+ * 
+ *
+ */
 void setup()
 {
   size(900,700);
@@ -47,14 +50,12 @@ void setup()
   PortTwo = new Serial(this, Serial.list()[1],9600); // "COM6"
   PortThree = new Serial(this, Serial.list()[2], 9600); // "COM7"
   PortFour = new Serial(this, Serial.list()[3],9600); // "COM9"
-  //PortFive = new Serial(this, Serial.list()[4], 9600);
-  //PortSix = new Serial(this, Serial.list()[5],9600);
+
   PortOne.bufferUntil('\n');
   PortTwo.bufferUntil('\n');
   PortThree.bufferUntil('\n');
   PortFour.bufferUntil('\n');
-  //PortFive.bufferUntil('\n');
-  //PortSix.bufferUntil('\n');
+
 
 
    //navn på output fil
@@ -106,137 +107,43 @@ void draw()
 void serialEvent(Serial thisPort) {
   try {
     if (thisPort == PortOne) {
-      value = PortOne.readStringUntil('\n');
-      String[] arr = value.split(",");
-      svar = Integer.parseInt(arr[1].replace("\n","").trim());
-      bruker = arr[0];
-      println(value);
-      println(arr[0]);
-      println(svar);
-      if ( svar == 1) {
-      antSvar1++;
-      }
-      if (svar == 2) {
-        antSvar2++;
-      }
-      if (svar == 3) {
-        antSvar3++;
-      }
-      if(svar == 4) {
-        antSvar4++;
-      }
+      angiSvar(PortOne);
     }
     if(thisPort == PortTwo) {
-      value = PortTwo.readStringUntil('\n');
-      String[] arr = value.split(",");
-      bruker = arr[0];
-      svar = Integer.parseInt(arr[1].replace("\n","").trim());
-      println(value);
-      println(arr[0]);
-      println(arr[1]);
-      if ( svar == 1) {
-      antSvar1++;
-      }
-      if (svar == 2) {
-        antSvar2++;
-      }
-      if (svar == 3) {
-        antSvar3++;
-      }
-      if(svar == 4) {
-        antSvar4++;
-      }
+      angiSvar(PortTwo);
     }
     if (thisPort == PortThree) {
-      value = PortThree.readStringUntil('\n');
-      String[] arr = value.split(",");
-      svar = Integer.parseInt(arr[1].replace("\n","").trim());
-      bruker = arr[0];
-      println(value);
-      println(arr[0]);
-      println(svar);
-      if ( svar == 1) {
-      antSvar1++;
-      }
-      if (svar == 2) {
-        antSvar2++;
-      }
-      if (svar == 3) {
-        antSvar3++;
-      }
-      if(svar == 4) {
-        antSvar4++;
-      }
+      angiSvar(PortThree);
     }
     if (thisPort == PortFour) {
-      value = PortFour.readStringUntil('\n');
-      String[] arr = value.split(",");
-      svar = Integer.parseInt(arr[1].replace("\n","").trim());
-      bruker = arr[0];
-      println(value);
-      println(arr[0]);
-      println(svar);
-      if ( svar == 1) {
-      antSvar1++;
-      }
-      if (svar == 2) {
-        antSvar2++;
-      }
-      if (svar == 3) {
-        antSvar3++;
-      }
-      if(svar == 4) {
-        antSvar4++;
-      }
+      angiSvar(PortFour);
     }
-    /*
-    if (thisPort == PortFive) {
-      value = PortFive.readStringUntil('\n');
-      String[] arr = value.split(",");
-      svar = Integer.parseInt(arr[1].replace("\n","").trim());
-      bruker = arr[0];
-      println(value);
-      println(arr[0]);
-      println(svar);
-      if ( svar == 1) {
-      antSvar1++;
-      }
-      if (svar == 2) {
-        antSvar2++;
-      }
-      if (svar == 3) {
-        antSvar3++;
-      }
-      if(svar == 4) {
-        antSvar4++;
-      }
-    }
-    */
-    /*if (thisPort == PortSix) {
-      value = PortSix.readStringUntil('\n');
-      String[] arr = value.split(",");
-      svar = Integer.parseInt(arr[1].replace("\n","").trim());
-      bruker = arr[0];
-      println(value);
-      println(arr[0]);
-      println(svar);
-      if ( svar == 1) {
-      antSvar1++;
-      }
-      if (svar == 2) {
-        antSvar2++;
-      }
-      if (svar == 3) {
-        antSvar3++;
-      }
-      if(svar == 4) {
-        antSvar4++;
-      }
-    }*/
- } catch(Exception e)
- {
-   println(e);
  }
+ catch(Exception e) {
+   println(e);
+  }
+}
+
+void angiSvar(Serial port){
+  value = port.readStringUntil('\n');
+  String[] arr = value.split(",");
+  svar = Integer.parseInt(arr[1].replace("\n","").trim());
+  bruker = arr[0];
+  println(value);
+  println(arr[0]);
+  println(svar);
+  if ( svar == 1) {
+  antSvar1++;
+  }
+  if (svar == 2) {
+    antSvar2++;
+  }
+  if (svar == 3) {
+    antSvar3++;
+  }
+  if(svar == 4) {
+    antSvar4++;
+  }
 }
 
 void fileSelected(File selection) {
@@ -246,14 +153,14 @@ void fileSelected(File selection) {
     reader = createReader(selection.getAbsolutePath());
 
     while(lestelinjer < linjerisporsmalsfil){
-    try {
-      line = reader.readLine();
-      arrayfrafil.add(line);
-      lestelinjer++;
-    }
-    catch(IOException io) {
-      line = null;
-    }
+      try {
+        line = reader.readLine();
+        arrayfrafil.add(line);
+        lestelinjer++;
+      }
+      catch(IOException io) {
+        line = null;
+      }
     }
 
     output = createWriter(arrayfrafil.get(0) + "medsvar" + ".txt");
