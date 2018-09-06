@@ -62,7 +62,7 @@ Alle Baser (Arduinoer) er koblet til en PC som kjører DestopApp. DesktopApp tar
 
 
 ## Video
-*Kommer snart*
+[Demo på Vimeo](https://vimeo.com/170173208)
 
 ## Credits
 Andreas Finn Hansen ([@andrefh](https://github.com/andrefh))  
